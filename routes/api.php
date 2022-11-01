@@ -37,5 +37,5 @@ Route::get('/{lang}/vol/{nom}', function ($lang, $nom) { // Controller + Route
         abort(404);                           // Controller
     }
 
-    return '';
+    return 'json!';
 })->where('lang', $langValidator);            // Controller + Route
